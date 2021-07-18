@@ -7,9 +7,9 @@ change_url = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY')}/commit/{
 message = Mail(
     from_email=os.environ.get('FROM_EMAIL'),
     to_emails=os.environ.get('TO_EMAIL'),
-    subject='Site updated',
+    subject='Weekly Box Office update',
     html_content=f"""
-    Content attached, changes can be found at <a href="https://www.boxofficemojo.com/weekly/?ref_=bo_nb_ml_secondarytab">https://www.boxofficemojo.com/weekly/?ref_=bo_nb_ml_secondarytab</a>
+    Weekly BoxOffice is updated. Content attached, changes can be found at <a href="https://www.boxofficemojo.com/weekly/?ref_=bo_nb_ml_secondarytab">Box Office Mojo</a>
     """)
 
 # https://www.twilio.com/blog/sending-email-attachments-with-twilio-sendgrid-python
